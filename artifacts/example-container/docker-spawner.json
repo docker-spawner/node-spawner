@@ -1,0 +1,12 @@
+{
+  "Image": "node",
+  "Cmd": ["node","/node/index.js"],
+  "Volumes": {
+    "/node/": {}
+  },
+  "HostConfig": {
+    "Binds": [
+      "c:/Users/aquang/Downloads/docker-spawner/artifacts/example-container:/node/"
+    ]
+  }
+}

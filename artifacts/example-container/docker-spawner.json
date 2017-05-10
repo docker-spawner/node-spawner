@@ -6,7 +6,7 @@
   },
   "HostConfig": {
     "Binds": [
-      "c:/Users/aquang/Downloads/docker-spawner/artifacts/example-container:/node/"
+      "~/docker-spawner/artifacts/example-container:/node/"
     ]
   }
 }

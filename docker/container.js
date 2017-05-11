@@ -59,6 +59,8 @@ module.exports = {
         return;
       }
 
+      log(data);
+
       log('Container started.');
     });
   },

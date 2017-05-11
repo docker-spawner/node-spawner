@@ -6,7 +6,7 @@
   },
   "HostConfig": {
     "Binds": [
-      "~/docker-spawner/artifacts/example-container:/node/"
+      "gitlab_artifacts:/node/"
     ]
   }
 }

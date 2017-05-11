@@ -7,8 +7,14 @@ const Container = require('./docker/container');
 const artifactsDir = Path.join(__dirname, 'artifacts');
 
 const watcher = Chokidar.watch(artifactsDir, {
-  ignored: /(^|[\/\\])\../, persistent: true,
-  ignoreInitial: true
+  ignored: /(^|[\/\\])\../,
+  persistent: true,
+  ignoreInitial: true,
+  usePolling: true,
+  awaitWriteFinish: {
+      pollInterval: 100,
+      stabilityThreshold: 250
+  },
 });
 
 const SpawnContainer = function (path, isDir) {
